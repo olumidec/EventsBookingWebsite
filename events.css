@@ -1,0 +1,718 @@
+/* General Styles */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin-top: 90px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+.mainHeader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Header Title */
+.Header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 10px;
+    position: relative;
+    width: 100%;
+    top: 10%;  /* Position below the header */
+    transform: translateY(-0%); /* Center vertically */
+}
+
+.mainHeader .logo img {
+    max-height: 60px;
+}
+
+header.mainHeader ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header.mainHeader a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header.mainHeader a:hover {
+    background-color: #575757;
+    color: #ffcc00;
+    border-radius: 5px;
+}
+/* Nav Bar */
+.colourstuff {
+    display: flex; /* Use Flexbox */
+    justify-content: center;
+    align-items: center; 
+    gap: 15px; 
+    position: relative;
+    text-align: center;
+}
+.colourstuff img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.colourstuff img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Main container for the search bar */
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+
+.dark .search-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    flex-wrap: wrap;
+}
+
+.dark .search-field input {
+    flex-grow: 1;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+/* Styling for the search bar container */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.982);
+    width: 100%;
+    max-width: 600px;
+    flex-wrap: wrap;
+}
+
+/* Styling for each search field */
+.search-field {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    flex: 1;
+}
+
+/* Input fields for search */
+.search-field input {
+    flex-grow: 1;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Focused input field effect */
+.search-field input:focus {
+    border-color: #007BFF;
+}
+
+/* Icon styling for the search fields */
+.search-field .icon {
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search-field .icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Styling for the search button */
+#searchButton {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the search button */
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+#searchButton img {
+    width: 20px;
+    height: 20px;
+}
+
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(0.875rem, 2vw, 1.25rem); /* Responsive font scaling */
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.checkbtn {
+    font-size: 22px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    align-items: right;
+}
+#check {
+    display: none;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+/* Navigation Bar - Responsive Adjustments */
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap; /* Default: no wrap */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.navid{
+    display: flex; /* Horizontally aligns items */
+    justify-content: space-between; /* Centers the nav items */
+    align-items: center;
+}
+
+
+
+
+/* Event Section */
+.main-content {
+    padding: 100px 20px 20px; /* Account for fixed header */
+    gap: 20px;
+}
+
+.eventInformation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: font-size 0.3s ease;
+    
+}
+
+/* Event Card */
+.event-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    overflow: hidden; /* Ensure child elements don't overflow */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Event Image */
+.event-card img.event-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Event Details */
+.event-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.event-details h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: font-size 0.3s ease;
+    flex-wrap: wrap;
+    
+}
+
+.event-details p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #ddd;
+    transition: font-size 0.3s ease;
+    flex-wrap: wrap;
+}
+
+.event-details .event-date,
+.event-details .event-location {
+    color: #ccc;
+}
+
+.event-details .event-preview {
+    font-size: 0.85rem;
+    color: #bbb;
+    margin-top: auto; /* Push preview up */
+    line-height: 1.4;
+}
+
+/* Read More Link */
+.event-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-start;
+    transition: color 0.3s;
+}
+
+.event-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Light Mode Code */
+#switch {
+    visibility: hidden;
+    position: absolute;
+}
+
+.switch-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+.switch-label .toggle {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: grey;
+    position: absolute;
+    left: 3px;
+    transition: .5s all ease;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all ease;
+
+}
+
+#switch:checked ~ .switch-label {
+    background: grey;
+    border: none;
+    transition: .5s all ease;
+}
+
+#switch:checked ~ .switch-label .toggle {
+    height: 12.5px;
+    border-radius: 25px 25px 0 0;
+    background: transparent;
+    box-shadow: 0 -6px 0 0 #fff;
+    transform: scale(0.9) translateX(75px) rotate(90deg);
+    transition: .7s all ease;
+}
+
+/* Footer Element */
+footer{
+    background-color: #111;
+}
+.main-Footer{
+    width: 100%;
+    padding: 60px 20px 10px ;
+}
+.MediaIcons{
+    display: flex;
+    justify-content: center;
+}
+.MediaIcons a {
+    text-decoration: none;
+    margin: 15px;
+    border-radius: 30%;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit; /* Ensure the color comes from SVG or a:hover */
+    font-size: 0;
+}
+
+.MediaIcons svg {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.MediaIcons a:hover svg {
+    transform: scale(1.1);
+
+}
+
+.MediaIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+.MediaIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.MediaIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.dark {
+    background-color: white;
+    color: black;
+    transition: 1s ease-in;
+}
+
+.dark .mainHeader {
+    background-color: grey; /* Navigation bar background */
+    color: black;
+}
+
+.dark .mainHeader a {
+    color: black; /* Link color in the navigation bar */
+}
+
+.dark .mainHeader a:hover {
+    background-color: #d3d3d3;
+    color: #ffcc00;
+}
+
+.dark .HeaderName {
+    color: black; /* Change header text color */
+}
+
+.dark .main-content {
+    background-color: white; /* Ensure main content switches to white */
+    color: black;
+}
+
+.dark .eventInformation {
+    background-color: rgba(255, 255, 255, 0.9); /* Lighter background for events */
+    color: black;
+    border-radius: 10px;
+}
+
+.dark .event-card {
+    background-color: rgba(0, 0, 0, 0.1); /* Light gray for cards */
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.dark .event-card img.event-image {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.dark .event-details h2 {
+    color: #333;
+}
+
+.dark .event-details p,
+.dark .event-details .event-date,
+.dark .event-details .event-location {
+    color: #555;
+}
+
+.dark .event-link {
+    color: #0066cc; /* Change link color */
+}
+
+.dark .event-link:hover {
+    color: #004080;
+}
+/* Dark Mode for Footer */
+.dark footer {
+    background-color: grey; /* Light background for footer in dark mode */
+}
+
+.dark .main-Footer {
+    padding: 70px 30px 20px;
+    color: #333; /* Text color for light background */
+}
+
+.dark .MediaIcons a {
+    background-color: #ddd; /* Light background for social icons */
+    color: black; /* Dark text/icons for contrast */
+    border: 1px solid #ccc; /* Optional: subtle border for separation */
+    transition: 0.5s;
+}
+
+.dark .MediaIcons a:hover {
+    background-color: grey; /* Slightly darker hover effect */
+    color: white; /* Contrast text on hover */
+}
+
+.dark .MediaIcons a i {
+    color: #333; /* Darker icon color */
+}
+
+.dark .footerBottom {
+    background-color: #eaeaea; /* Light grey for bottom footer */
+}
+
+.dark .footerBottom p {
+    color: #444; /* Dark text for readability */
+}
+
+.dark .designer {
+    color: #555; /* Slightly darker designer text */
+    opacity: 0.8; /* Maintain visual emphasis */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .eventInformation {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+    .mainHeader {
+        flex-direction: column; /* Stack the header items */
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 60px 15px;
+    }
+
+    .event-card img.event-image {
+        height: 120px;
+    }
+    #navbar ul {
+        display: none;
+        width: 250px; /* Set the width of the menu */
+        background-color: black; 
+        position: fixed; /* Fix the position of the menu */
+        top: 80px;
+        right: 0; /* Align the menu to the right side of the screen */
+        padding: 20px;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+        z-index: 1000; /* Ensure it stays on top of other elements */
+        border-radius: 25px;
+        border: solid white 2px;
+    }
+
+    /* Show the navigation when the checkbox is checked */
+    #navbar input[type="checkbox"]:checked ~ .navid ul {
+        display: block;
+    }
+    .dark #navbar ul{
+        background: grey;
+        color: black;
+    }
+    /* Style the navigation items */
+    #navbar ul li {
+        padding: 10px 0;
+        text-align: right; /* Align items to the right */
+        border-bottom: 1px solid #575757;
+    }
+
+    #navbar ul li:last-child {
+        border-bottom: none;
+    }
+
+    /* Navigation links */
+    #navbar ul li a {
+        font-size: 1.25rem; /* Increase font size */
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+
+    /* Hamburger icon */
+    .checkbtn {
+        display: block;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px; /* Align the icon to the right */
+        z-index: 1001; /* Higher than the menu */
+    }
+    #navbar a {
+        text-align: center;
+        padding: 10px;
+    }
+    .search-bar {
+        flex-wrap: wrap; /* Allow wrapping of fields */
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .search-field {
+        width: 100%; /* Full width fields */
+    }
+
+    #searchButton {
+        width: 100%; /* Full width button */
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 769px) {
+    #navbar ul {
+        display: flex; /* Show the navigation links horizontally */
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .checkbtn {
+        display: none; /* Hide the hamburger menu on larger screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .eventInformation {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+
+    .event-card img.event-image {
+        height: 100px;
+    }
+
+    .event-details h2 {
+        font-size: 1rem;
+    }
+
+    .event-details p {
+        font-size: 0.8rem;
+    }
+
+    .event-link {
+        font-size: 0.85rem;
+    }
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar a {
+        font-size: 0.875rem;
+        padding: 5px 10px;
+    }
+    .search-bar {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .search-field input {
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    #searchButton {
+        padding: 8px 0;
+    }
+}

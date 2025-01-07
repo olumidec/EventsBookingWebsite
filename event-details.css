@@ -1,0 +1,608 @@
+/* Reset */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* General Styles */
+
+body {
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 90px;
+    background-color: black;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    font-size: 2.5rem; /* Header text scales with root font size */
+}
+
+h2 {
+    font-size: 2rem; /* Slightly smaller header */
+}
+
+p {
+    font-size: 1rem; /* Normal text size */
+}
+h1, h2, p {
+    overflow-wrap: break-word;
+
+}
+/* Navigation Bar */
+.mainHeader img{
+    max-width: 80px;
+    align-items: left;
+    display: flow-root;
+    margin: 0;
+    padding: 0;
+}
+.mainHeader{
+    position: fixed; /* Makes the nav bar static at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100px;
+    background-color: rgb(26, 23, 23); /* Dark background */
+    z-index: 1000; /* Ensures it stays on top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+/* Nav Bar */
+.colourstuff {
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Aligns items vertically */
+    gap: 15px; /* Space between the elements */
+    position: relative;
+    text-align: center;
+}
+.colourstuff img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.colourstuff img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 15px;
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+    transition: font-size 0.3s ease;
+    white-space: nowrap;
+}
+
+#navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+.checkbtn {
+    font-size: 22px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    align-items: right;
+}
+#check {
+    display: none;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.navid{
+    display: flex;
+    justify-content: space-between; /* Centers the nav items */
+    align-items: center;
+}
+
+
+
+.mainHeader,a{
+    text-align: center;
+}
+.mainHeader:hover, a:hover{
+    color: white;
+}
+
+
+.Header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Event Header */
+.event-header {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    color: #f4f4f4;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Event Layout */
+#event-details{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    max-width: 1200px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    gap: 20px;
+    align-items: center; /* Center content horizontally */
+}
+
+/* Event Image Section */
+.event-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Event Info Section */
+.Info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center; /* Center align text */
+    width: 100%;
+    max-width: 800px;
+    align-items: center; /* Centers content including the button */
+}
+
+.Info p {
+    font-size: 1.1rem;
+    color: #d0d0d0;
+    line-height: 1.6;
+}
+
+.Info strong {
+    color: #f39c12;
+}
+
+/* Specific Event Details */
+.event-date, .event-time, .event-location, .event-organizer, .event-contact, .event-price, .event-availability, .description {
+    margin-bottom: 10px;
+}
+
+/* Description Styling */
+.description {
+    margin-top: 20px;
+    font-style: italic;
+    color: #b3b3b3;
+}
+
+/* Button for Interaction (Optional) */
+#book-now {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #f39c12;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#book-now:hover {
+    background: #e67e22;
+    transform: translateY(-3px);
+}
+/* Light Mode Code */
+#switch {
+    visibility: hidden;
+    position: absolute;
+}
+
+.switch-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+.switch-label .toggle {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: grey;
+    position: absolute;
+    left: 3px;
+    transition: .5s all ease;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all ease;
+
+}
+
+#switch:checked ~ .switch-label {
+    background: grey;
+    border: none;
+    transition: .5s all ease;
+}
+
+#switch:checked ~ .switch-label .toggle {
+    height: 12.5px;
+    border-radius: 25px 25px 0 0;
+    background: transparent;
+    box-shadow: 0 -6px 0 0 #fff;
+    transform: scale(0.9) translateX(75px) rotate(90deg);
+    transition: .7s all ease;
+}
+
+footer{
+    background-color: #111;
+}
+.main-Footer{
+    width: 100%;
+    padding: 60px 20px 10px ;
+}
+.MediaIcons{
+    display: flex;
+    justify-content: center;
+}
+.MediaIcons a {
+
+    margin: 15px;
+    border-radius: 40%;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit; /* Ensure the color comes from SVG or a:hover */
+    font-size: 0; /* Prevent text-like appearance */
+}
+
+.MediaIcons svg {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.MediaIcons a:hover svg {
+    transform: scale(1.1);
+
+}
+
+.MediaIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+.MediaIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.MediaIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/* Light Mode Styling for Dark Class */
+.dark {
+    background-color: white;
+    color: black;
+    transition: 1s all ease; /* Smooth transition for the theme change */
+}
+
+/* Navigation Bar in Light Mode */
+.dark .mainHeader {
+    background-color: grey; /* Light gray navigation bar */
+    color: #000000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.dark .mainHeader a {
+    color: #333333; /* Darker link color for contrast */
+}
+
+.dark .mainHeader a:hover {
+    background-color: #e0e0e0; /* Subtle hover background */
+    color: #007bff; /* Bright hover color */
+}
+
+/* Typography Adjustments */
+.dark h1, 
+.dark h2, 
+.dark p {
+    color: #222222; /* Slightly softer black for text */
+    text-shadow: none; /* Remove text shadow in light mode */
+}
+
+/* Wrapper Background */
+.dark .wrapper {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Event Section */
+.dark #event-details {
+    background: rgba(255, 255, 255, 0.95); /* Light and slightly transparent */
+    border: 1px solid #cccccc; /* Subtle border for separation */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.dark .event-header {
+    color: #333333; /* Header color in light mode */
+}
+
+.dark .Info p {
+    color: #444444; /* Softer text color for event details */
+}
+
+/* Buttons in Light Mode */
+.dark #book-now {
+    color: #ffffff;
+    background: #007bff; /* Bright blue button */
+    border: 1px solid #0056b3; /* Border for definition */
+}
+
+.dark #book-now:hover {
+    background: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Subtle hover animation */
+}
+
+/* Images in Light Mode */
+.dark .event-image {
+    border: 1px solid #dddddd; /* Light border around images */
+}
+
+/* Links in Light Mode */
+.dark .event-link {
+    color: #007bff; /* Bright blue links */
+}
+
+.dark .event-link:hover {
+    color: #0056b3; /* Slightly darker on hover */
+}
+
+.dark footer {
+    background-color: grey; /* Light background for footer in dark mode */
+}
+
+.dark .main-Footer {
+    padding: 70px 30px 20px;
+    color: #333; /* Text color for light background */
+}
+
+.dark .MediaIcons a {
+    background-color: #ddd; /* Light background for social icons */
+    color: black; /* Dark text/icons for contrast */
+    border: 1px solid #ccc; /* Optional: subtle border for separation */
+    transition: 0.5s;
+}
+
+.dark .MediaIcons a:hover {
+    background-color: grey; /* Slightly darker hover effect */
+    color: white; /* Contrast text on hover */
+}
+
+.dark .MediaIcons a i {
+    color: #333; /* Darker icon color */
+}
+
+.dark .footerBottom {
+    background-color: #eaeaea; /* Light grey for bottom footer */
+}
+
+.dark .footerBottom p {
+    color: #444; /* Dark text for readability */
+}
+
+.dark .designer {
+    color: #555; /* Slightly darker designer text */
+    opacity: 0.8; /* Maintain visual emphasis */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #event-details {
+        padding: 15px;
+    }
+
+    .event-image {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    #navbar ul {
+        display: none;
+        width: 250px; /* Set the width of the menu */
+        background-color: black; 
+        position: fixed; /* Fix the position of the menu */
+        top: 80px;
+        right: 0; /* Align the menu to the right side of the screen */
+        padding: 20px;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+        z-index: 1000; /* Ensure it stays on top of other elements */
+        border-radius: 25px;
+        border: solid white 2px;
+    }
+
+    /* Show the navigation when the checkbox is checked */
+    #navbar input[type="checkbox"]:checked ~ .navid ul {
+        display: block;
+    }
+    .dark #navbar ul{
+        background: grey;
+        color: black;
+    }
+    /* Style the navigation items */
+    #navbar ul li {
+        padding: 10px 0;
+        text-align: right; /* Align items to the right */
+        border-bottom: 1px solid #575757;
+    }
+
+    #navbar ul li:last-child {
+        border-bottom: none;
+    }
+
+    /* Navigation links */
+    #navbar ul li a {
+        font-size: 1.25rem; /* Increase font size */
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+
+    /* Hamburger icon */
+    .checkbtn {
+        display: block;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px; /* Align the icon to the right */
+        z-index: 1001; /* Higher than the menu */
+    }
+    #navbar a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .Info {
+        padding: 10px;
+    }
+    .dark #event-details {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+    .dark .Info p {
+        font-size: 1rem; /* Maintain readability */
+    }
+}
+
+@media (min-width: 769px) {
+    #navbar ul {
+        display: flex; /* Show the navigation links horizontally */
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .checkbtn {
+        display: none; /* Hide the hamburger menu on larger screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .Info p {
+        font-size: 0.9rem;
+    }
+
+    #book-now {
+        font-size: 0.9rem;
+    }.dark h1 {
+        font-size: 2rem; /* Resize headers */
+    }
+    .dark #book-now {
+        font-size: 0.9rem; /* Smaller button font size */
+    }
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar a {
+        font-size: 0.875rem;
+        padding: 5px 10px;
+    }
+}

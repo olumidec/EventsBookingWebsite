@@ -1,0 +1,322 @@
+[
+    {
+        "id": "1",
+        "title": "Nottingham's Funky Disco",
+        "description": "Step back in time and groove to the beats at Nottingham's Funky Disco! This vibrant event invites you to experience a celebration of disco classics, shimmering lights, and non-stop dancing. Held at the iconic Nottingham Hall Centre, it’s the perfect way to start the New Year in style. Gather your friends, dress in your disco best, and prepare for a day filled with electrifying music and unforgettable vibes.",
+        "date": "2025-1-1",
+        "time": {
+            "start": "10:00 AM",
+            "end": "4:00 PM",
+            "timezone": "GMT"
+        },
+        "location":{
+            "venue": "Nottingham Hall Centre",
+            "address": {
+                "street": "Hattrick Lane" ,
+                "city": "Nottingham",
+                "postalCode": "NG7 3PB",
+                "country":"United Kingdom" 
+            }
+        },
+        "organizer": {
+            "name": "Felix Baah",
+            "contactEmail": "felix.Baah@FoundationUK.com",
+            "phone":"+44-555-987-6543"
+        },
+        "ticketInfo":{
+            "price": 29.99,
+            "currency": "GBP",
+            "Availability": "Available"
+        },
+        "tags": [""],
+        "imageUrl": "https://www.hdwallpapers.in/download/disco_balls_party_night_4k-HD.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Basketball Play For Fun",
+        "description": "Join us for an evening of spirited competition and camaraderie at the Basketball Play For Fun event in London Lion Arena. Whether you’re a seasoned player or a beginner, this gathering offers an exciting environment to showcase your skills or cheer from the sidelines. Embrace the energy of the game and make new connections as you enjoy this lively sporting event.",
+        "date": "2025-2-10",
+        "time": {
+            "start": "8:30 PM",
+            "end": "10:15 PM",
+            "timezone": "GMT"
+        },
+        "location":{
+            "venue": "London Lion Arena",
+            "address": {
+                "street": "Allhail Road",
+                "city": "London",
+                "postalCode": "SE22 4DF",
+                "country": "United Kingdom"
+            }
+        },
+        "organizer": {
+            "name": "Irene Ntopi",
+            "contactEmail":"Irene@FoundationUK.com" ,
+            "phone": "+44-532-123-6940"
+        },
+        "ticketInfo":{
+            "price": 5.99,
+            "currency": "GBP",
+            "Availability": "Available"
+        },
+        "tags": [""],
+        "imageUrl": "https://th.bing.com/th/id/R.7f2f51200beafd2f5655811244398140?rik=f3z7LmQ%2f34%2bYxw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f6%2fa%2f5%2f626332.jpg&ehk=YbUJ3Lu%2fHsSvdlekPZa6L3q2exw105twzcxHx%2bpbVyw%3d&risl=&pid=ImgRaw&r=0"
+    },
+    {
+        "id": "3",
+        "title": "Bowling Tournament",
+        "description": "Show off your precision and aim at the Bowling Tournament hosted in the state-of-the-art Birmingham Bowling Venue. Perfect for competitors and casual players alike, this event promises a thrilling evening of fun, prizes, and entertainment. Gather your team or come solo, and enjoy the vibrant atmosphere, lively music, and top-tier bowling action.",
+        "date": "2025-1-27",
+        "time": {
+            "start": "6:00 PM",
+            "end": "10:00 PM",
+            "timezone": "GMT"
+        },
+        "location":{
+            "venue": "Birmingham Bowling Venue",
+            "address": {
+                "street": "Pickardy Lane",
+                "city": "Birmingham",
+                "postalCode": "B4 2BJ",
+                "country": "United Kingdom"
+            }
+        },
+        "organizer": {
+            "name": "Clinton Benjamin",
+            "contactEmail":"ClintonBenjamin@FoundationUK.com" ,
+            "phone": "+44-112-686-6840"
+        },
+        "ticketInfo":{
+            "price": 15.99,
+            "currency": "GBP",
+            "Availability": "Available"
+        },
+        "tags": [""],
+        "imageUrl": "https://www.hdwallpapers.in/download/club_bowling_balls_4k_hd-HD.jpg"
+    },
+    {
+        "id": "4",
+        "title": "Chelsea vs Manchester United",
+        "description": "Witness the ultimate showdown as two football giants clash at Old Trafford. Chelsea vs Manchester United offers a thrilling day for sports enthusiasts, complete with electrifying gameplay and unmatched excitement. Secure your seat in one of the most iconic venues in the football world, and join thousands of fans cheering for their favorite team.",
+        "date": "2025-9-14",
+        "time": {
+            "start": "10:00 AM",
+            "end": "1:00 PM",
+            "timezone": "GMT"
+        },
+        "location":{
+            "venue": "Old Trafford",
+            "address": {
+                "street": "Sir Matt Busby Way",
+                "city": "Manchester",
+                "postalCode": "M16 ORA",
+                "country": "United Kingdom"
+            }
+        },
+        "organizer": {
+            "name": "Olumide Abimbola",
+            "contactEmail":"OluAb@FoundationUK.com" ,
+            "phone": "+44-123-456-7890"
+        },
+        "ticketInfo":{
+            "price": 125.99,
+            "currency": "GBP",
+            "Availability": "Available"
+        },
+        "tags": [""],
+        "imageUrl": "https://th.bing.com/th/id/R.e410d996a5518a0c0c459aa3f1bd9fd7?rik=ka66ellbVbKF3Q&pid=ImgRaw&r=0"
+    },
+    {
+        "id": "5",
+        "title": "Coventry's Rave",
+        "description": "Elevate your Friday nights with Coventry's Rave at The Old Crown. Experience a fusion of pulsating beats, high-energy performances, and a vibrant crowd that dances into the early hours of the morning. Perfect for nightlife enthusiasts, this weekly rave is your ticket to unforgettable evenings filled with energy and rhythm.",
+        "date": "Every Friday",
+        "time": {
+            "start": "10:00 PM",
+            "end": "3:00 AM",
+            "timezone": "GMT"
+        },
+        "location":{
+            "venue": "The Old Crown",
+            "address": {
+                "street": "466 Aldermans Green Rd",
+                "city": "Coventry",
+                "postalCode": "CV2 1NP",
+                "country": "United Kingdom"
+            }
+        },
+        "organizer": {
+            "name": "Olumide Abimbola",
+            "contactEmail":"OluAb@FoundationUK.com" ,
+            "phone": "+44-123-456-7890"
+        },
+        "ticketInfo":{
+            "price": 10.00,
+            "currency": "GBP",
+            "Availability": "Available"
+        },
+        "tags": [""],
+        "imageUrl": "https://vistapointe.net/images/rave-wallpaper-19.jpg"
+    },
+    {
+        "id": "6",
+        "title": "Zero Gravity",
+        "description":"Experience nightlife redefined at Zero Gravity, Dubai’s premier beachside destination. With breathtaking views of the marina, world-class DJs, and a luxurious ambiance, this exclusive event promises an unforgettable night under the stars. Dress to impress and immerse yourself in the magic of Dubai’s vibrant party scene.",
+        "date": "2025-11-25",
+        "time": {
+            "start": "10:00 PM",
+            "end": "3:00 AM",
+            "timezone": "GST"
+        },
+        "location":{
+            "venue": "Zero Gravity",
+            "address": {
+                "street": "Dubai Marina",
+                "city": "King Salman",
+                "postalCode": "CV2 1NP",
+                "country": "Dubai"
+            }
+        },
+        "organizer": {
+            "name": "Zero Gravity",
+            "contactEmail":"info@0gravity.ae" ,
+            "phone": "+971-4399-0009"
+        },
+        "ticketInfo":{
+            "price": 2500.00,
+            "currency": "AED",
+            "Availability": "Available"
+        },
+        "tags": [""],
+        "imageUrl": "https://www.visitdubai.com/-/media/gathercontent/poi/z/zero-gravity-beach-club/fallback-image/zero-gravity-beach-club-01.jpg"
+    },
+    {
+        "id": "7",
+        "title": "After-noon Prayer",
+        "description": "Find solace and spiritual enrichment every Sunday at Afternoon Prayer, hosted by God’s Vineyard Church in Nottingham. This serene gathering offers a time of connection, worship, and reflection in a welcoming and peaceful environment. All are invited to join in fostering a deeper sense of faith and community.",
+        "date": "Every Sunday",
+        "time": {
+            "start": "5:00 PM",
+            "end": "8:00 AM",
+            "timezone": "GST"
+        },
+        "location":{
+            "venue": "God's Vineyard Church",
+            "address": {
+                "street": "Derby Road",
+                "city": "Nottingham",
+                "postalCode": "NG7 1QF",
+                "country": "United Kingdom"
+            }
+        },
+        "organizer": {
+            "name": "GVC Nottingham",
+            "contactEmail":"info@0GVC.ae" ,
+            "phone": "+44 071-439-5109"
+        },
+        "ticketInfo":{
+            "price": 0.00,
+            "currency": "GBP",
+            "Availability": "Available"
+        },
+        "tags": [""],
+        "imageUrl": "https://th.bing.com/th/id/OIP.7Mlvd7ASEc42cBCFuHLBygHaE8?rs=1&pid=ImgDetMain"
+    },
+    {
+        "id": "8",
+        "title": "Trip to  Al'Kaaba",
+        "description": "Embark on a sacred journey to Al’Kaaba in Mecca. This profound experience combines spirituality and heritage, guiding you through the heart of Islamic tradition. Led by knowledgeable organizers, this event is meticulously planned to ensure a meaningful and inspiring pilgrimage for all attendees.",
+        "date": "2025-11-25",
+        "time": {
+            "start": "6:00 AM",
+            "end": "12:00 AM",
+            "timezone": "GST"
+        },
+        "location":{
+            "venue": "The Kaaba",
+            "address": {
+                "street": "Al Masjid Al Haram Road",
+                "city": "Mecca",
+                "postalCode": "Mecca 24231",
+                "country": "Saud Arabia"
+            }
+        },
+        "organizer": {
+            "name": "Zero Gravity",
+            "contactEmail":"info@0gravity.ae" ,
+            "phone": "+971-4399-0009"
+        },
+        "ticketInfo":{
+            "price": 10000.00,
+            "currency": "Saudi riyal",
+            "Availability": "Available"
+        },
+        "tags": [""],
+        "imageUrl": "https://wallpaperaccess.com/full/1546338.jpg"
+    },
+    {
+        "id": "9",
+        "title": "Trading & Investment Gathering",
+        "description": "Dive into the world of finance at the Trading & Investment Gathering in London. This engaging event provides valuable insights from industry leaders, networking opportunities, and practical strategies to elevate your financial portfolio. A must-attend for investors and entrepreneurs aiming to stay ahead in the market.",
+        "date": "2025-7-2",
+        "time": {
+            "start": "8:00 AM",
+            "end": "12:00 PM",
+            "timezone": "GMT"
+        },
+        "location":{
+            "venue": "London Investment Company",
+            "address": {
+                "street": "Beckham Road",
+                "city": "London",
+                "postalCode": "SE15 9FL",
+                "country": "United Kingdom"
+            }
+        },
+        "organizer": {
+            "name": "Foundation Enterprise",
+            "contactEmail":"info@FoundationUK.com" ,
+            "phone": "+44-132-133-4914"
+        },
+        "ticketInfo":{
+            "price":0,
+            "currency": "GBP",
+            "Availability": "Available"
+        },
+        "tags": [""],
+        "imageUrl": "https://c0.wallpaperflare.com/preview/811/935/645/adults-analysis-brainstorming-collaboration.jpg"
+    },
+    {
+        "id": "10",
+        "title": "Black Leadership Conference",
+        "description": "Celebrate excellence and empowerment at the Black Leadership Conference in Birmingham. Featuring inspiring speakers, thought-provoking discussions, and opportunities for collaboration, this event shines a spotlight on leadership and innovation within the Black community. Join us to connect, learn, and be inspired.",
+        "date": "2024-12-31",
+        "time": {
+            "start": "10:00 PM",
+            "end": "1:00 AM",
+            "timezone": "GMT"
+        },
+        "location":{
+            "venue": "Birmingham City Campus",
+            "address": {
+                "street": "Holy Street",
+                "city": "Birmingham",
+                "postalCode": "B6 9NJ",
+                "country": "United Kingdom"
+            }
+        },
+        "organizer": {
+            "name": "Olumide Abimbola",
+            "contactEmail":"OluAb@FoundationUK.com" ,
+            "phone": "+44-262-830-1518"
+        },
+        "ticketInfo":{
+            "price": 15.00,
+            "currency": "GBP",
+            "Availability": "Available"
+        },
+        "tags": [""],
+        "imageUrl": "https://thebaptistrecord.org/wp-content/uploads/2022/07/choir.jpg"
+    }
+]
